@@ -10,6 +10,21 @@ public class ClasesJava {
         for (int i = 1; i <= 10; i++) {
             System.out.println(i);
         }
+        int x = 4;
+        /*
+            operaciones condicionales
+            igualdad ==
+            desigualdad !=
+            mayor que >
+            mayor o igual que >=
+            menor que <
+            menor o igual que <=
+        */
+        if (x ==  4) {
+            // si es verdad
+        } else {
+            // si es falso
+        }
     }
     public static void main(String[] args) {
         // Tipos de dato y creación de variables
