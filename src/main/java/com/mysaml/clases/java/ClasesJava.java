@@ -8,7 +8,12 @@ public class ClasesJava {
             i = i + 1
         */
         for (int i = 1; i <= 10; i++) {
-            System.out.println(i);
+            int modulo = i % 2;
+            if(modulo == 0){
+                System.out.println("el numero " + i + "es par");
+            } else {
+                System.out.println("el numero " + i + "no es par");
+            }
         }
         int x = 4;
         /*
