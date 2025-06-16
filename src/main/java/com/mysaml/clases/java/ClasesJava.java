@@ -19,6 +19,13 @@ public class ClasesJava {
             mayor o igual que >=
             menor que <
             menor o igual que <=
+        
+            operaciones aritmeticas
+            suma +
+            resta -
+            multiplicacion *
+            divicion /
+            modulo %
         */
         if (x ==  4) {
             // si es verdad
