@@ -1,5 +1,45 @@
 package com.mysaml.clases.java;
+
 public class ClasesJava {
+    static String[] ids = new String[] {"p1", "p2", "p3", "p4"};
+    static int count = 0;
+    public static String genID() {
+        count++;
+        return "p" + count;
+    }
+    public static boolean existID(String id) {
+        if (id == null) return false;
+        for (int i = 0; i < ids.length; i++) {
+            if (ids[i].equals(id)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    public static String newID() {
+        /*
+            Diferencia de while y do while
+            el bloque del codigo del do while se ejecutara siempre
+            almenos 1 vez aunque la condicion no se cumpla
+            en el caso del while el bloque de codigo solo se ejecutara
+            si la condicion se cumple, de lo contrario jamas se ejecutara
+        */
+        /*
+            String id = genID();
+            while (existID(id)){
+                id = genID();
+            };
+        */
+        String id;
+        do {
+            id = genID();
+            System.out.println("newx id to test: " + id);
+        } while (existID(id));
+        return id;
+    }
+    public static void usageWhile() {
+        System.out.println(newID());
+    }
     public static void calcPares() {
         /*
             for (inicialisacion de variable; condicion; incremetar/decrementar) {}
@@ -40,12 +80,13 @@ public class ClasesJava {
     }
     public static void main(String[] args) {
         // Tipos de dato y creación de variables
-        int enteros = 5; // almacena numeros enteros_ 1, 2, 3
-        double doubles = 1.52; // numeros con decimales 1.1, 1.2, 5.4
-        String s = "Cadena de texto"; // almacena cadenas de texto
+        // int enteros = 5; // almacena numeros enteros_ 1, 2, 3
+        // double doubles = 1.52; // numeros con decimales 1.1, 1.2, 5.4
+        // String s = "Cadena de texto"; // almacena cadenas de texto
         
         System.out.println("Hello World!");
         
-        calcPares();
+        // calcPares();
+        usageWhile();
     }
 }
