@@ -37,8 +37,21 @@ public class ClasesJava {
         } while (existID(id));
         return id;
     }
-    public static void usageWhile() {
-        System.out.println(newID());
+    /*n representa cantidad de pares que se quiere mostrar */
+    /*Saber cauntos pares se han mostrado hasta ahora */
+    /*Tener contador para ver cuantos se han probado */
+    /*Ejecutar codigo hasta que se muestre la cantidad de n requeridas */
+    public static void paresWhile(int n) {
+        int mostrados = 0;
+        int contador = 1;
+        while (mostrados <= n) { 
+            int modulo = contador % 2;
+            if(modulo == 0){
+                mostrados ++;
+                System.out.println(contador);
+            }
+            contador ++;         
+        }
     }
     public static void calcPares() {
         /*
@@ -87,6 +100,6 @@ public class ClasesJava {
         System.out.println("Hello World!");
         
         // calcPares();
-        usageWhile();
+        paresWhile(15);
     }
 }
