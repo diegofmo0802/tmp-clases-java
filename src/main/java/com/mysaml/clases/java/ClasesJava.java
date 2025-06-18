@@ -48,7 +48,7 @@ public class ClasesJava {
             int modulo = contador % 2;
             if(modulo == 0){
                 mostrados ++;
-                System.out.println(contador);
+                System.out.println(mostrados + " -> " + contador);
             }
             contador ++;         
         }
