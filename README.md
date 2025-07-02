@@ -1,5 +1,5 @@
 **INDICE**
-- Variables
+- [Variables y tipos de datos](Lecciones/Variables.md)
 - Condicionales
 - Bucles
-- [Clases](Lecciones/CLASES.md)
+- [Clases, métodos y atributos](Lecciones/CLASES.md)

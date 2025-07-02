@@ -115,5 +115,10 @@ public class ClasesJava {
         // calcPares();
         // paresWhile(15);
         clases();
+        int x = 5;
+        boolean y = true;
+        float z = 3.14f; 
+        char letra = 'A'
+        
     }
 }
