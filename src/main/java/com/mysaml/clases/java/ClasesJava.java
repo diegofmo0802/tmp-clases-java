@@ -91,15 +91,29 @@ public class ClasesJava {
             // si es falso
         }
     }
+    public static void clases() {
+        Animal conejo = new Animal("Conejo", 2, 4);
+
+        Animal perro = new Animal("Perro", 5, 4);
+
+        System.out.println(perro);
+        // perro.edad = 8; // Modificación de atributos públicos;
+        perro.setEdad(8); // Modificación de atributos privados;
+        System.out.println("la edad es " + perro.getEdad()); // Acceso a atributos privados mediante getter
+        System.out.println(perro);
+
+        perro.sobrevivir(conejo);
+    }
     public static void main(String[] args) {
         // Tipos de dato y creación de variables
         // int enteros = 5; // almacena numeros enteros_ 1, 2, 3
         // double doubles = 1.52; // numeros con decimales 1.1, 1.2, 5.4
         // String s = "Cadena de texto"; // almacena cadenas de texto
         
-        System.out.println("Hello World!");
+        // System.out.println("Hello World!");
         
         // calcPares();
-        paresWhile(15);
+        // paresWhile(15);
+        clases();
     }
 }
